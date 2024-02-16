@@ -35,7 +35,7 @@ heart_rate = col2.number_input("Enter your resting heart rate")
 
 glucose = col3.number_input("Enter your glucose level")
 
-st.button('Predict')
+
 
 
 
@@ -71,7 +71,7 @@ model = joblib.load('fhs_rf_model.pkl')
 prediction = model.predict(df_pred)
 
 
-if st.button('Predict'):
+if st.button('Predict',key="1"):
 
     if(prediction[0]==0):
         st.write('<p class="big-font">You likely will not develop heart disease in 10 years.</p>',unsafe_allow_html=True)
