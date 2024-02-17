@@ -2,7 +2,7 @@ joblib
 pandas
 streamlit
 scikit-learn
-sklearn
+
 imblearn
 requests
 sklearn-ensemble
